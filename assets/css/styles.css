@@ -31,7 +31,7 @@ body {
     font-size: 1rem;
     background: linear-gradient(1deg, rgb(64, 38, 98, 0.8) ,
     rgb(57, 0, 166, 0.8)), 
-    url(../assets/img//background/background.jpg);
+    url('../assets/img//background/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
