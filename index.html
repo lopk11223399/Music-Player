@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automaton</title>
+    <link rel="shortcut icon" href="./assets/img/background/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="video-app">
+        <div class="header">
+            <div class="logo">
+                <a href="" class="logo-link">
+                    <img class="logo-link__img" src="./assets/img/background/logo.png" alt="logo">
+                    <p class="logo-title">Automaton</p>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="menu-lists">
+                    <!-- <div class="menu-theme">
+                        <h2 class="theme-title">Theme</h2>
+                        <div class="theme-switcher">
+                            <input type="radio" id="light-theme" name="themes" checked />
+                            <label for="light-theme">
+                                <span>
+                                    <i data-feather="sun"></i>Light
+                                </span>
+                            </label>
+                            <input type="radio" id="dark-theme" name="themes" />
+                            <label for="dark-theme">
+                                <span>
+                                    <i data-feather="moon"></i>Dark
+                                </span>
+                            </label>
+                            <input type="radio" id="black-theme" name="themes" />
+                            <label for="black-theme">
+                                <span>
+                                    <i data-feather="star"></i>Black
+                                </span>
+                            </label>
+                            <span class="slider"></span>
+                        </div>
+                    </div> -->
+                    <div class="menu-body">
+                        <ul class="menu-body__list">
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-house"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items menu-active">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-star"></i>
+                                    Top 100
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fas fa-icons fa-fw fa-lg"></i>
+                                    Category
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-music"></i>
+                                    New music
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-clapperboard"></i>
+                                    MV
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-body">
+                        <ul class="menu-body__list">
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i  class="menu-body__list--icon fa-solid fa-user"></i>
+                                    Account Settings
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-message"></i>
+                                    Give Feedback
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-circle-info"></i>
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu-body__list--items">
+                                <a class="menu-body__list--item" href="#">
+                                    <i class="menu-body__list--icon fa-solid fa-circle-question"></i>
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-logout">
+                    <a class="menu-logout__link" href="#">
+                        <i class="menu-logout__icon fa-solid fa-arrow-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-header">
+                <div class="container-search">
+                    <input class="container-search__text" type="text" placeholder="Search...">
+                    <i class="container-search__icon fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="container-user">
+                    <img class="container-user__img" src="./assets/img/background/user.png" alt="user">
+                    <p class="container-user__name">Phan Nhat Hoang</p>
+                    <i class="container-user__icon fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="container-body">
+                <div class="container-title">
+                    <h1 class="container-title--1">Top 100</h1>
+                </div>
+                <div class="container-playlists">
+                    <fieldset class="container-playlist">
+                        <legend class="container-playlists__title">Top 100 European American songs</legend>
+                        <div class="container-playlist__audio song--American">
+                            
+                        </div>
+                    </fieldset>
+                    <fieldset class="container-playlist">
+                        <legend class="container-playlists__title">Top 100 Vietnamese songs</legend>
+                        <div class="container-playlist__audio song--VN">
+                            
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="footer">
+                    <div class=" grid wide footer-body">
+                        <div class="col l-4 footer-body__info">
+                            <h2 class="footer-body__info--title">Product information</h2>
+                            <ul class="footer-body__info--list">
+                                <li>
+                                    <h4>Link logo: <a class="footer-body__info--link" href="https://www.canva.com/p/templates/EAEz46Tn2wM-minimal-circle-illustration-robot-head-dj-music-logo/">click here</a></h4>
+                                </li>
+                                <li>
+                                    <h4>Link desgin: <a class="footer-body__info--link" href="https://static.collectui.com/shots/2857401/mustune-large">click here</a></h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4 footer-body__info">
+                            <h2 class="footer-body__info--title">Personal information</h2>
+                            <ul class="footer-body__info--list">
+                                <li>
+                                    <h4>Name: <span>Phan Nhat Hoang</span></h4>
+                                </li>
+                                <li>
+                                    <h4>Gmail: <span>hoang1311176@gmail.com</span></h4>
+                                </li>
+                                <li>
+                                    <h4>Phone: <span>0356193413</span></h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4 footer-body__info">
+                            <h2 class="footer-body__info--title">Product brands</h2>
+                            <img class="footer-body__info--img" src="./assets/img/background/logo.png" lt="logo">
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>2022 - Copyright this product about Phan Nhat Hoang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-title">
+                <i class="playlist-title__icon fa-solid fa-list-check"></i>
+                <h2 class="playlist-title__text">Playlist</h2>
+            </div>
+            <div class="playlist-song">
+                
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <header>
+            <h4>Now Playing:</h4>
+            <h2>Music Name</h2>
+        </header>
+        <div class="audio">
+            <div class="cd" style="width: 66px; opacity: 1;">
+                <div class="cd-thumb" style="background-image: url('./assets/img/background/logo.png')">
+                </div>
+            </div>
+            <div class="control">
+                <div class="btn-prev prev--songA prev--songVN prev--songInPlayList">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fa-solid fa-play icon-play"></i>
+                </div>
+                <div class="btn-next next--songA next--songVN next--songInPlayList">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+            </div>
+            
+            <div class="progress__container">
+                <div class="progress__item current">0:0</div>
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100%">
+                <div class="progress__item duration">0:0</div>
+            </div>
+
+            <div class="control">
+                <div class="btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            
+            <div class="volume">
+                <div class="volume-icon--high">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="volume-icon--off volume-active">
+                    <i class="fa-solid fa-volume-off"></i>
+                </div>
+                <input id="volume" type="range" min="0" max="1" step="0.05" value="1">
+            </div>
+
+        </div>
+        <audio id="audio" src=""></audio>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
